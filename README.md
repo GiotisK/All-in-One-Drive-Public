@@ -108,7 +108,9 @@ Currently this project has some security issues. Some of them include the storag
 * Since dropbox will use refresh tokens starting in September, the refresh token logic must be implemented in the dropbox handler aswell.  
 From dropbox: _On September 30th, 2021, the Dropbox OAuth flow will no longer return new long-lived access tokens. It will instead return short-lived access tokens, and optionally return refresh tokens. Existing tokens are not impacted._  
 * Huge refactors in the client side of the project  
-* Some refactors in the server side
+* Some refactors in the server side  
+* Tests  
+* Comments in difficult-to-understand pieces of code  
 
 
 
