@@ -1,7 +1,7 @@
 ## All-in-One-Drive  
   
 ![logo aio](https://user-images.githubusercontent.com/10963096/124155177-dfd68d00-da9e-11eb-967b-514784f93abb.PNG)  
-AiO Drive is a web application that unifies the most commercial cloud drive services (Google Drive, Dropbox, OneDrive)  
+AiO Drive is a web application that unifies the most commercial cloud drive services (Google Drive, Dropbox, OneDrive). It is the project that I personally implemented for my Thesis in the Department of Computer Science and Engineering in University of Ioannina.    
 
 # Technologies used 
 * MongoDB (Atlas) (mongoose ^5.9.2)
@@ -106,7 +106,9 @@ Currently this project has some security issues. Some of them include the storag
 # Future TODOs  
 * Maybe add more cloud drive services. For example **pCloud**  
 * Since dropbox will use refresh tokens starting in September, the refresh token logic must be implemented in the dropbox handler aswell.  
-From dropbox: _On September 30th, 2021, the Dropbox OAuth flow will no longer return new long-lived access tokens. It will instead return short-lived access tokens, and optionally return refresh tokens. Existing tokens are not impacted._
+From dropbox: _On September 30th, 2021, the Dropbox OAuth flow will no longer return new long-lived access tokens. It will instead return short-lived access tokens, and optionally return refresh tokens. Existing tokens are not impacted._  
+* Huge refactors in the client side of the project  
+* Some refactors in the server side
 
 
 
