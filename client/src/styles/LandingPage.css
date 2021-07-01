@@ -1,0 +1,107 @@
+html, body, #root, #root>div {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /*use this to avoid and unnecessary scroll list on the landing page*/
+}
+
+.App {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.svg {
+    position: absolute;
+    z-index: -1;
+}
+
+/*the container of the photo and the credentials box*/
+.x-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+}
+
+/*the div that has the credentials box in it*/
+.box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.landing-page__title {
+    position: absolute;
+    font-family: 'Arciform';
+    font-size: 50px;
+    color: white;
+    left: 1%;
+    top: 1%;
+    margin: 0;
+    font-size: 32px;
+    user-select: none;
+}
+
+.landing-photo_div {
+    /* position: absolute;
+    left: 15%;
+    top: 40%; */
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    /* background-color: yellow; */
+}
+
+@media only screen and (max-width: 1026px) { 
+    .landing-photo_div { 
+      display: none; 
+    } 
+}
+
+/*the "the most commercial drives all in one place" text*/
+.landing-text {
+    margin-top: 5%;
+    /* margin-left: 2%; */
+    color: gray;
+    font-size: 25px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: italic;
+
+}
+.landing-photo {
+    height: 350px;
+    width: 500px;
+}
+
+@media only screen and (max-width: 1366px) { 
+    .x-container {
+        margin-top: 13%;
+    }
+
+    .landing-photo { 
+        height: 280px;
+        width: 400px;
+    } 
+
+    .landing-text {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {     
+    .landing-page__title {
+        top: 0%;
+    }
+}
+
+img {
+  /*   width: 40%;
+    height: auto; */
+}

@@ -1,0 +1,75 @@
+/*the container of each file "icon"*/
+.file-element__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 32px;
+    min-width: 32px;
+    border: 1px solid lightgray;
+    border-radius: 10%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.05);
+    background-color: white;
+
+}
+
+.folder-element__container {
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 40px;
+    min-width: 40px;
+ /*    margin: 0 auto;
+    margin-top: 50px; */
+    position: relative;
+    background-color: darkgray;
+    border-radius: 0 4px 4px 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.05);
+    
+}
+
+.folder-element__container:before {
+    content: '';
+    width: 20px;
+    min-width: 20px;
+    height: 5px;
+    border-radius: 20px 20px 0 0;
+    background-color: darkgray;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+}
+
+/*the text of the file format*/
+.file-text{
+    margin: 0;
+    font-size: 11px;
+    max-width: 30px;
+    overflow-wrap: break-word;
+}
+
+.file-popup__menu {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    /* margin-top: 3px;
+    margin-right: 5%; */
+    border: solid 1px #F0F0F0;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.25);
+}
+
+@media only screen and (max-width: 1366px) { 
+    .filename-text, .email-text, .date-text {
+        font-size: 13px;
+    }
+}
+

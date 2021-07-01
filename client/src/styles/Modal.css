@@ -1,0 +1,110 @@
+/*the outer container*/
+.modal-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*hacky way for on click out => hide modal*/
+.modal-container-clickable {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+/*the actual modal container*/
+.modal {
+    display: flex;
+    z-index: 2;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 500px ;
+    height: 250px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+/*the div that contains the add-drive text"*/
+.add-drive__container {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 92%;
+    margin: 3% 0% 1% 5%;
+    border-bottom: 1px solid lightgray;
+
+}
+
+/*the "Add a drive text"*/
+.add-drive-text {
+    margin: 0;
+    margin-bottom: 3px;
+    font-size: 25px;
+    color: #363636;
+}
+
+.add-drive-buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    width: 90%;
+}
+
+
+/*the div that contains the delete-confirm text and the "delete" and "cancel" buttons*/
+.dialog-container, .rename-container {
+    display: flex;
+    flex-direction: column;
+   /*  justify-content: space-between; */
+    height: 100%;
+    width: 90%;   
+}
+
+/*the div that contains the text"Are you sure... to delete the file ?" */
+.delete-confirm-text-container, .rename-form-text-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*the text "Are you sure... to delete the file ?" */
+.delete-confirm-text {
+    word-wrap: break-word;
+    margin: 0;
+    font-size: 17px;
+    color: #363636;
+}
+
+/*the div that contains the "cancel" and "delete" buttons*/
+.delete-buttons-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 1px solid lightgray;
+}
+
+span {
+    font-weight: bold;
+}

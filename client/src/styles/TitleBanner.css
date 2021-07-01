@@ -1,0 +1,117 @@
+/*the div that contains the banner and logo-title*/
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 7px 7px;
+    background-color: #24a0ed;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/*the container of 'virtual quota' string and loader*/
+.quota-loader-container {
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* the 'virtual quota' string WITH loader enabled*/
+.quota-string-loader {
+    margin: 0;
+    margin-right: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* the 'virtual quota' string WITHOUT loader enabled*/
+.quota-string {
+    margin-right: 95px;
+    color: white;
+    font-size: 14px;
+}
+
+/* the X / X GB text */
+.quota-gigabytes {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/*the div that contains the burger menu button and the aio drive title*/
+.logo-menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+/*the title "aio drive" that appears on top left*/
+.logo-title {
+    /* position: absolute; */
+    font-family: 'Arciform';
+    font-size: 50px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin: 0;
+    margin-bottom: 3px;
+    font-size: 32px;
+    user-select: none;
+}
+
+.burger-menu-button {
+    transition: all 0.2s ease;
+}
+
+.burger-menu-button:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05) ;
+}
+
+@media only screen and (max-width: 700px) {
+    .logo-title {
+        font-size: 28px;
+    }
+    .quota-string {
+        margin-right: 66px;
+        font-size: 13px;
+    }
+
+    .quota-string-loader {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+
+    .quota-loader-container {
+        margin-right: 120px;
+    }
+
+    .quota-gigabytes {
+        font-weight: bold;
+        font-size: 11px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 350px) { 
+    .logo-title {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    .quota-string {
+        margin-right: 66px;
+        font-size: 10px;
+    }
+
+    .quota-string-loader {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+}
+
+

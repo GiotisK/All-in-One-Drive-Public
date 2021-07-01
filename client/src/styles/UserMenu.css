@@ -1,0 +1,166 @@
+/* the div that contains both circle button and menu modal*/
+.popup-menu__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   /*  justify-content: flex-end; */
+    position: absolute;
+    right: 1%;
+    top: 1%
+}
+
+/* the container of the circle button*/
+.circle-button__container-inactive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 35px;
+    margin-right: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.25);
+    background-color: #c9c9c9;
+    cursor: pointer;
+    border-width: 1.5px;  
+    border-color: #99c6f3;
+    transition:all 0.2s ease;
+}
+
+.circle-button__container-active { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 35px;
+    margin-right: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.25);
+    background-color: #c9c9c9;
+    cursor: pointer;
+    border-width: 1.5px;  
+    border-color: #99c6f3;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+.circle-button__container-inactive:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 35px;
+}
+
+/*the letter of the circle button/*/
+.circle-button__letter {
+    user-select: none; /*text not copy-able*/
+    font-size: 30px;
+    color: white;
+}
+
+/*the div of the actual menu dropdown box*/
+.popup-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 250px;
+    margin-top: 4%;
+    margin-right: 5%;
+    border: solid 1px #F0F0F0;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.25);
+}
+
+/*the div with the "User" text*/
+.username-container {
+    flex: 1;
+    border-bottom: solid 1px #F0F0F0;
+    word-wrap: break-word;
+    padding-right: 4px;
+}
+
+.settings-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #F0F0F0;
+  
+}
+
+.signout-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #F0F0F0;
+
+}
+
+/* the "User" text*/
+.user-text {
+    margin: 3% 0 0 3%;
+    color: black;
+    border-bottom: solid 1px #F0F0F0;
+    font-size: 20px;
+}
+
+/*the email text*/
+.username-text {
+    margin: 2% 0 0 6%;
+    font-size: 15px;
+    color: gray;
+}
+
+.settings-text {
+    flex-grow: 1;
+    margin: 0 3% 0 3%;
+    padding: 1% 0% 1% 3%;
+    border-radius: 4px;
+    color: black;
+    font-size: 17px;
+    user-select: none;
+
+}
+
+.settings-text:hover {
+    background-color: #a8cef591;
+    cursor: pointer;
+
+}
+
+.signout-text {
+    flex-grow: 1;
+    margin: 0 3% 0 3%;
+    padding: 1% 0% 1% 3%;
+    border-radius: 4px;
+    color: black;
+    font-size: 17px;
+    user-select: none;
+}
+
+.signout-text:hover {
+    background-color: #a8cef591;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {     
+
+    .circle-button__container-inactive {
+        height: 48px;
+        width: 48px;
+    }
+
+    .circle-button__container-active{
+        height: 44px;
+        width: 44px;
+    }
+
+    .circle-button__letter{
+        font-size: 27px;
+    }
+
+    .popup-menu__container {
+        top: 1.5%;
+    }
+
+}

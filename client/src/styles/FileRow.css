@@ -1,0 +1,151 @@
+/*the file row container*/
+.file-row__container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    padding: 10px 0 10px 10px;
+    border-bottom: solid 0.5px #F0F0F0;
+    border-radius: 4px;
+}
+
+/*the div that contains the file image and the name of the file*/
+.filename-div {
+    display: flex;
+    /* flex: 1; */
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    width: 40%;
+}
+
+/*the file name text*/
+.filename-text, .email-text {
+    margin: 0;
+    margin-left: 2%;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* word-wrap: break-word; */
+    font-size: 16px;
+    margin-right: 5%;
+}
+
+/*the div that contains the drive of the file*/
+.drive-div {
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   /*  user-select: none; */
+}
+
+.size-div {
+    display: flex;
+    width: 10%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   /*  user-select: none; */
+}
+
+/*the email text*/
+/* .email-text {
+    margin: 0;
+    margin-left: 2%;
+    font-size: 18px;
+} */
+
+/*the div that contains the date of the file*/
+.date-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+}
+
+.date-text {
+    width: 30%;
+    margin: 0;
+}
+
+/*the div with the download icon*/
+.action-icon-div-inactive {
+    cursor: pointer;
+    margin-left: 10%;
+    user-select: none;
+    
+}
+
+/*the div of the 3 dots button*/
+.action-icon-div-active {
+    position: relative;
+    cursor: pointer;
+    margin-left: 10%;
+    user-select: none;
+    border: 2px solid #99c6f3;
+    border-radius: 5px;
+}
+
+.action-icon-div-inactive:hover {
+    border: 0.5px solid #f0f0f0;
+    border-radius: 5px;
+}
+
+.action-popup-menu {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 3px;
+    margin-right: 5%;
+    border: solid 1px #F0F0F0;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.25);
+}
+
+.action-text-container {
+    border-bottom: solid 1px #F0F0F0;
+}
+
+
+.action-text {
+    flex-grow: 1;
+    margin: 0;
+    padding: 3% 3% 3% 5%;
+    border-radius: 4px;
+}
+
+/*hover pseudos*/
+.action-text:hover {
+    background-color: #a8cef591;
+    cursor: pointer;
+}
+
+/*the "shared" file icon*/
+.share-icon-div{
+    margin-left: 5px;
+    /* margin-top: 2px; */
+    cursor: pointer;
+}
+
+.share-icon-div:hover{
+    border: 0.5px solid #f0f0f0;
+    border-radius: 5px;
+}
+
+.share-icon-div:active{
+    transform: scale(1.1);
+ }
+
+@media only screen and (max-width: 1366px) { 
+    .filename-text, .email-text, .date-text {
+        font-size: 13px;
+    }
+}

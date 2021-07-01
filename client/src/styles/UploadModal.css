@@ -1,0 +1,62 @@
+/*the actual div of the upload modal*/
+.upload-modal {
+    display: flex;
+    z-index: 2;
+    position: relative;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    width: 400px ;
+    height: 500px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.upload-drive-text {
+    width: 87%;
+    word-wrap: break-word;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    color: #363636;
+
+}
+
+.drive-row {
+    display: flex;
+    align-self: center;
+    margin-top: 10px;
+    /* margin-bottom: 5px; */
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: baseline;
+    border-bottom: 1px solid lightgray;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.drive-row:hover {
+    background-color: #a8cef591;
+}
+
+.drive-row-email-text{
+    margin: 0;
+    margin-left: 5px;
+    margin-bottom: -1%;
+    overflow: hidden;
+    color: #363636;
+    word-wrap: break-word;
+}
+
+.drive-row-scrollview {
+    display: flex;
+    flex-direction: column;
+    overflow-y:auto;
+    margin-bottom: 7px;
+   /*  flex-grow: 1; */
+}

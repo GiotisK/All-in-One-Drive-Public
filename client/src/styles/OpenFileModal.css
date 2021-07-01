@@ -1,0 +1,62 @@
+.sound-modal {
+    display: flex;
+    z-index: 2;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px ;
+    height: 150px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+.open-image-container {
+    max-width: 900px;
+    max-height: 800px;
+}
+
+.open-video-container {
+    z-index: 3;
+    max-width: 900px;
+    max-height: 800px;
+}
+
+
+@media only screen and (max-width: 1000px) {     
+    .open-image-container, .open-video-container {
+        max-width: 700px;
+        max-height: 600px;
+    }
+
+  /*   .open-video-container {
+
+    } */
+
+}
+
+
+@media only screen and (max-width: 700px) {     
+    .open-image-container, .open-video-container {
+        max-width: 600px;
+        max-height: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {     
+    .open-image-container, .open-video-container {
+        max-width: 400px;
+        max-height: 800px;
+    }
+}
+
+
+@media only screen and (max-width: 350px) {     
+    .open-image-container, .open-video-container {
+        max-width: 300px;
+        max-height: 800px;
+    }
+}

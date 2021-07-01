@@ -1,0 +1,80 @@
+
+/*the div with the sort button and the popup menu*/
+.sort-menu__container {
+    margin-left: 16%;
+}
+
+/*the div that contains the button. It is needed for it to be clickable*/
+.sort-button-container-before {
+    cursor: pointer;
+    user-select: none;
+    transform: rotate(0deg);
+    transition: transform 0.15s linear;
+}
+
+.sort-button-container-before:hover {
+    border: 0.5px solid lightgray;
+    border-radius: 3px;
+}
+
+.sort-button-container-after{
+    cursor: pointer;
+    user-select: none;
+    transform: rotate(90deg);
+    transition: transform 0.15s linear;
+    border: 1.5px solid #99c6f3;;
+    border-radius: 4px;
+}
+
+/*the actual popup div*/
+.sort-popup__menu {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 3px;
+    margin-right: 5%;
+    border: solid 1px #F0F0F0;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.25);
+}
+
+/*the container of the "Sort by" text*/
+.sort-by-container {
+    border-bottom: solid 1px #F0F0F0;
+    margin-right: 10px;
+}
+
+/*the "Sort by" text*/
+.sort-by-text {
+    margin: 1px 0 1px 2px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/*the container of the "Drive" text*/
+.sort-drive-container, .sort-date-container {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #F0F0F0;
+}
+/*the "drive" and "date" text*/
+.sort-drive-text, .sort-date-text {
+    flex-grow: 1;
+    margin: 0;
+    padding: 3% 3% 3% 5%;
+    border-radius: 4px;
+    color: gray;
+}
+
+/*hover pseudos*/
+.sort-drive-text:hover, .sort-date-text:hover {
+    background-color: #a8cef591;
+    cursor: pointer;
+
+}
+
+

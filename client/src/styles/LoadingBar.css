@@ -1,0 +1,38 @@
+.loading-bar-container-open {
+    width: 400px;
+    height: 20px;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-right: 0;
+    border-radius: 4px 0px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    right: 17px;
+    transition: 1s ease;
+    background-color: white;
+}
+
+.loading-bar-container-closed {
+    width: 400px;
+    height: 20px;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-radius: 4px 0px 0px 0px;
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    transition: 1s ease;
+    background-color: white;
+}
+ 
+.progress-bar {
+    height: 20px;
+    background-color: lightgreen;
+    white-space: nowrap;
+}
+
+.progress-text {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 13px;
+}

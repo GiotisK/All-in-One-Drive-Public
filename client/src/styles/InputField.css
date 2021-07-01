@@ -1,0 +1,47 @@
+.input-field-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.input-field-container__login {
+    border: 1px solid #ccc;
+    padding-left: 2%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 8px;
+    outline: none;
+    
+    
+}
+
+.input-field-container__rename {
+
+    border: 1px solid #ccc;
+    padding-left: 2%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.input-field-container__login:focus {
+    outline: none;
+    box-shadow: 0px 0px 2.5px #0066ff;
+
+    
+}
+
+.input-label {
+    font-size: 18px;
+    color: #363636;
+}
+
+@media only screen and (max-width: 1366px) { 
+    .input-field-container {
+        height: 33px;
+    }
+    .input-label {
+        font-size: 15px;
+    }
+}

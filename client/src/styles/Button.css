@@ -1,0 +1,46 @@
+/*the actual button*/
+.button {
+    
+   /*  padding: 0% 5% 0% 5%; */
+    width: 80px;
+    height: 50px;
+    background-color: #24a0ed;
+    border-width: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.15s linear;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px #9ad1f3;
+}
+
+
+.button:active {
+    transform: rotate(4deg);
+    transition: transform 0.15s linear;
+} 
+
+.button:hover {
+    opacity: 96%;
+}
+
+.button-text {
+    margin:0;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-size: 15px;
+    color: white;
+}
+
+@media only screen and (max-width: 1366px) { 
+    .button {
+        width: 60px;
+        height: 40px;
+    }
+    .button-text {
+        font-size: 12px;
+    }
+}

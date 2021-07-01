@@ -1,0 +1,29 @@
+.error-page__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+/*the container of the error text and error image*/
+.error-elements__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* "Ooops" text.*/
+.oops-text {
+    font-size: 50px;
+}
+
+/*"seems that this page doesnt exisst..." text.*/
+.info-text {
+}
+
+/*error code: 404*/
+.error-code-text {
+    font-size: 13px;
+    color: gray;
+
+}

@@ -1,0 +1,120 @@
+/*the div that serves as a menu for the scrollview*/
+.scrollview-menu__container {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 3em;
+    flex-direction: row;
+}
+
+/*the small div that overlaps with the sidebar*/
+.sidebar-overlap {
+   /*  z-index: -1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 0;
+    flex-shrink: 0;
+    /* flex-basis: 18em; */
+    width: 288px;
+    background-color: #F0F0F0;
+    /* border-bottom: 0.1px solid lightgray; */
+}
+
+
+.shadow-div {
+    position: relative;
+    z-index: -1;
+    height: 6px;
+    width: 18em;
+    background-color: rgb(255, 255, 255);
+}
+/*hacky way to render a stand alone border under the "Connected Drives" text"*/
+.sidebar-overlap__border{
+    flex-basis: 1;
+    border-bottom: 1px solid lightgray;
+    margin-left: 6%;
+}
+
+/*the scrollview of the sidebar*/
+.sidebar-scroll {
+
+}
+
+
+/*the "Connected drives" text on the side overlap*/
+.connected-drives__text {
+    font-size: 20px;
+    margin: 2% 0 1% 6%;
+    color: gray;
+    cursor: pointer;
+    user-select: none; /*text not copy-able*/
+}
+
+/*the div that contains the scrollview and the contents */
+.scrollview-menu {
+    /* z-index: -1; */
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    /* margin-left: 5px; */
+    border-bottom: 0.5px solid #F0F0F0;
+    border-top-left-radius: 2px;
+    background-color: white;
+
+    
+}
+
+.back-button-container {
+    padding-left: 2px;
+    transition:all 0.2s ease;
+    user-select: none;
+    cursor: pointer;
+}
+
+.back-button-container:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+
+/*the div that contains the drag n drop indicator*/
+.drop-arrow-div {
+    z-index: 2;
+    position: absolute;
+    /* display: 'flex'; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    left: 50%;
+    top: 8%;
+    pointer-events: none;
+}
+
+.drop-text-container{
+    margin-top: 2px;
+    background-color: white;
+    border: 1px solid rgb(230, 229, 229);
+    border-radius: 5px;
+    /* background-color: red; */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.05);
+
+}
+.drop-text{
+    margin: 0;
+    padding: 1px;
+    font-size: 20px;
+    color: rgb(102, 101, 101)
+
+}
+@media only screen and (max-width: 1000px) { 
+    .sidebar-overlap {
+        z-index: 1;
+        display: none;
+        position: absolute;
+        box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
+        border-top-right-radius: 6px;
+    }
+}

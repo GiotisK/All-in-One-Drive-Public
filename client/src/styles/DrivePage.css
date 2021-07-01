@@ -1,0 +1,90 @@
+html, body, #root, #root>div {
+    height: 100%;
+    margin: 0;  
+}
+
+
+
+/*the div that contains all page*/
+.drive-page__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+/*the div of the sidebar*/
+.drive-elements-container {
+  
+    flex-grow: 0;
+    flex-shrink: 0;
+    /* flex-basis: 18em; */
+    width: 288px;
+    height: 100%;
+    background-color: #F0F0F0;
+    overflow: auto;
+}
+
+
+.drive-elements-container > *:first-child {
+    margin-top: 5%;
+}
+
+
+/*the div that contains the sidebar and the scrollview*/
+.sidebar-scroll {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/*the div of the scrollview*/
+.scrollview {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow-y: auto; /*render scroll bar only when list is too big*/
+}
+
+.no-files-text, .no-drives-text {
+    text-align: center;
+    margin: 0;
+    margin-top: 5%;
+    color: gray;
+    font-size: 20px;
+}
+
+.no-drives-text {
+    font-size: 17px;
+}
+
+.clickable-text {
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.dropzone-effect {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+
+}
+
+@media only screen and (max-width: 1000px) { 
+    .drive-elements-container {
+       /*  display: none; */
+        z-index: 1;
+        position: absolute;
+        margin-top: 9px;
+        box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
+    }
+
+}

@@ -1,0 +1,37 @@
+
+/*the container of each add drive button*/
+.add-drive-button__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 140px;
+    height: 140px; */
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+    user-select: none;
+    transition:all 0.2s ease;
+    background-color: white;
+
+}
+
+.add-drive-button__container:active {
+    opacity: 40%;
+    width: 130px;
+    height: 130px;
+}
+
+.add-drive-button__container:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+/*the text of each button*/
+.add-drive-button-text {
+    
+   /*  font-size: 18px; */
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+}

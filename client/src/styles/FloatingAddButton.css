@@ -1,0 +1,77 @@
+.floating-button {
+    z-index: 1;
+    /* position: absolute;
+    bottom:5%;
+    right: 5%; */
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    /* background-color: #24a0ed; */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.25);
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+   /*  animation: '1s ease-out 1s 1s slide'; */
+    user-select: none;
+}
+.animation-class1{
+    animation: slidein1 0.3s;
+}
+
+.animation-class2{
+    animation: slidein2 0.3s;
+}
+
+.animation-class3{
+    animation: rotate1 0.3s;
+    animation-fill-mode: forwards
+}
+
+.animation-class4{
+    animation: rotate2 0.3s;
+    animation-fill-mode: forwards
+}
+
+@keyframes rotate1 {
+    from { transform: rotate(0deg)}
+    to   { transform: rotate(45deg)}
+}
+
+@keyframes rotate2 {
+    from { transform: rotate(45deg)}
+    to   { transform: rotate(0deg)}
+}
+
+@keyframes slidein2 {
+    from { transform: translateY(40px); opacity: 0.2;}
+    to   { transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes slidein1 {
+    from { transform: translateY(70px); opacity: 0.2;}
+    to   { transform: translateY(0px);opacity: 1;}
+}
+
+.floating-button:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+
+.floating-button-text{
+    position: relative;
+    margin: 0;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 1366px) { 
+    .floating-button {
+        height: 65px;
+        width: 65px;
+    }
+}

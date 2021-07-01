@@ -1,0 +1,30 @@
+/*the container of each tab*/
+.Name-scrollview-menu__tab {
+    width: 40%;
+}
+
+.Drive-scrollview-menu__tab {
+    width: 20%;
+}
+
+.Size-scrollview-menu__tab {
+    width: 10%;
+}
+
+.Date-scrollview-menu__tab {
+    width: 20%;
+}
+
+/*the menu tab titles "Name", "Drive", "Date"*/
+.tab-title {
+    margin: 0;
+    color: gray;
+    font-size: 20px;
+    user-select: none;
+}
+
+@media only screen and (max-width: 700px) { 
+    .tab-title {
+        font-size: 16px;
+    }
+}
