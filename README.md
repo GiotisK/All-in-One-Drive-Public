@@ -77,5 +77,37 @@ The purpose of this interface is to treat all the connected drives as one.
 _**And what does this mean?**_  
 It means that you can upload a file without choosing the drive the file will be uploaded too. The server decides in which drive the file will conclude. Also, you can create virtual folders where you can upload files that can belong to different cloud drives  
 # Screenshots  
-* All-in-one interface
+  
+* **Frontpage**  
+  
+![frontpage](https://user-images.githubusercontent.com/10963096/124174010-81b4a480-dab4-11eb-8261-1412a0a8f77a.PNG)
+
+* **All-in-one interface**  
+  
+![interface1](https://user-images.githubusercontent.com/10963096/124173483-c25fee00-dab3-11eb-9144-da2e2a06c43f.PNG)  
+  
+* **Virtual Drive interface**  
+  
+![interface2](https://user-images.githubusercontent.com/10963096/124173896-5af66e00-dab4-11eb-8c98-8813e68ba3f1.PNG)  
+
+# Concerns and direction of this project  
+Currently this project has some security issues. Some of them include the storage of sensitive tokens online, which are encrypted with a simple AES256 key in the server and stored in the database. Obtaining access to the server, someone can expose all stored tokens in the database.  Im thinking that this web application has to be partly re-implemented with local MongoDB database. There is no plan of hosting this web application ever online.  
+
+**Some thoughts for the re-implementation**  
+* Revert MongoDB database from ATLAS cloud db, to local db.  
+* Remove sharing of files between users, or keep functionality between local users.  
+
+# Bugs
+* There are sure some untracked bugs that I havent come across to yet. If you find one I will update this list or post an issue.  
+* Deleting contents from a drive, switching to virtual drive and uploading a file in virtual drive, results to rerendering the file-rows of the deleted files  
+
+# Future TODOs  
+* Maybe add more cloud drive services. For example **pCloud**  
+* Since dropbox will use refresh tokens starting in September, the refresh token logic must be implemented in the dropbox handler aswell.  
+From dropbox: _On September 30th, 2021, the Dropbox OAuth flow will no longer return new long-lived access tokens. It will instead return short-lived access tokens, and optionally return refresh tokens. Existing tokens are not impacted._
+
+
+
+
+
   
