@@ -19,7 +19,7 @@ AiO Drive is a web application that unifies the most commercial cloud drive serv
   * Automatic upload of the files in the cloud drive with the least free space
   * Creation of virtual folders that host files from the 3 cloud drives mentioned above  
 # Experimental Features  
-* **Rearrangment of files between the drives**.  In the worst case scenario when a file that is beeing uploaded, doesnt fit to any of the connected drives. In this case, the server tries to rearrange the files between the drives with the goal of creating the correct amount of empty space in one connected drive so the file can finally fit.  
+* **Rearrangment of files between the drives**.  In the worst case scenario when a file that is beeing uploaded, doesnt fit to any of the connected drives, the server tries to rearrange the files between the drives with the goal of creating the correct amount of empty space in one connected drive so the file can finally fit.  
 # Setup  
 *  Run ```npm install``` in each of the following folders: **api**, **client**
 *  Create a project in each of the cloud platforms and obtain client ids and client secrets
