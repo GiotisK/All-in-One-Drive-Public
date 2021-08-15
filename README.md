@@ -15,9 +15,9 @@ AiO Drive is a web application that unifies the most commercial cloud drive serv
 * Connection of the most popular cloud drives (Google Drive, Dropbox, OneDrive)
 * Listing of the files that are hosted in the drives mentioned  
 * Download, Upload (single/bulk), Rename, Sharing, Deletion of the files 
-* Unified Virtual Drive Interface, where users see all their connected drives as one and:
-  * Automatic upload of the files in the cloud drive with the least free space
-  * Creation of virtual folders that host files from the 3 cloud drives mentioned above  
+* Unified Virtual Drive Interface, where users see all their connected drives as one and can:
+  * Automatically upload the files in the cloud drive with the most free space
+  * Create virtual folders that host files from the 3 cloud drives mentioned above  
 # Experimental Features  
 * **Rearrangment of files between the drives**.  In the worst case scenario when a file that is beeing uploaded, doesnt fit to any of the connected drives, the server tries to rearrange the files between the drives with the goal of creating the correct amount of empty space in one connected drive so the file can finally fit.  
 # Setup  
